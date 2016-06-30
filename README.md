@@ -12,5 +12,9 @@
 ###演示效果[Demo]
 ![5](./temp/images/03A8DC4B-F9C4-4318-92BB-14B241ACA593.png)
 ![5](./temp/images/4BD34275-08C9-4B45-8CDB-4D1CCE495709.jpg)
+###编译方式[Compile]
++ 使用JetBrain Clion 打开。 
++ 也可以使用Cmake构建。
+
 ###作者[Anthor]
 + Jack Yu

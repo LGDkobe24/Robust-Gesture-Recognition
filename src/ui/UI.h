@@ -1,10 +1,5 @@
-//
-// Created by 庾金科 on 6/28/16.
-//
-
 #ifndef HANDGESTURE_UI_H
 #define HANDGESTURE_UI_H
-
 #endif //HANDGESTURE_UI_H
 #include <opencv/highgui.h>
 #include <opencv/cv.h>
@@ -12,7 +7,6 @@
 #include <stdio.h>
 #include "../util/config.h"
 #include "../util/util.h"
-
 IplImage* gr_ui_getFrame(CvCapture* pCap){
     IplImage* pFrame =cvQueryFrame( pCap);
     return pFrame;
@@ -104,13 +98,10 @@ void gr_ui_loadSystem(char* systemName,char* classifierPath){
                 cvDrawContours(pframe, first_contour, color, color, 0, 2, CV_FILLED, cvPoint(0, 0));
                 CvRect rect = cvBoundingRect( first_contour, 0);
                 pframe_compose = gr_ui_drawHist(pframe_compose,rate-0.5,seq,100);
-
                 //#################
                 //##core function##
                 //#################
-
                 int fingersNum = gr_hc_isHnad(first_contour, pframe_thes_,pframe);
-
             }
         }
         cvShowImage("hist",pframe_compose);
@@ -124,7 +115,6 @@ void gr_ui_loadSystem(char* systemName,char* classifierPath){
         seq++;
 
     }
-
     cvReleaseImage(&pframe);
     cvReleaseImage(&pframe_hsv);
     cvReleaseImage(&pframePre);

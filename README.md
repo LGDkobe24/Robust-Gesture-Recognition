@@ -1,4 +1,4 @@
-#Robust Hand Gesture Recongization Demo 庾金科 C语言课程设计。
+#Robust Hand Gesture Recongization Demo
 
 ###需要的依赖[Dependencies]:
 + Opencv

@@ -14,5 +14,4 @@
 + 也可以使用Cmake构建。
 
 ###作者[Anthor]
-+ Jack Yu 庾金科 C语言课程设计。
-+ 金融软件 工程 1 班 
++ Jack Yu
